@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane hgap="5.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="315.0" prefWidth="305.0" style="-fx-background-color: #0a0a0a;" vgap="5.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Unidad2.Calculadora">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" percentWidth="0.0" />
+    <ColumnConstraints hgrow="SOMETIMES" percentWidth="0.0" />
+      <ColumnConstraints hgrow="SOMETIMES" percentWidth="0.0" />
+      <ColumnConstraints hgrow="SOMETIMES" percentWidth="0.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints percentHeight="0.0" vgrow="SOMETIMES" />
+    <RowConstraints percentHeight="0.0" vgrow="SOMETIMES" />
+    <RowConstraints percentHeight="0.0" vgrow="SOMETIMES" />
+      <RowConstraints percentHeight="0.0" vgrow="SOMETIMES" />
+      <RowConstraints percentHeight="0.0" vgrow="SOMETIMES" />
+      <RowConstraints percentHeight="0.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <TextField fx:id="display" alignment="CENTER_RIGHT" prefHeight="30.0" promptText="0" text="0" GridPane.columnSpan="4">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <Button mnemonicParsing="false" onAction="#limpiarTodo" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #ef1cd7;" text="CA" GridPane.columnSpan="2" GridPane.rowIndex="1" />
+      <Button mnemonicParsing="false" onAction="#limpiarEntrada" prefHeight="50.0" prefWidth="70.0" style="-fx-background-color: #ef1cd7;" text="CE" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+      <Button mnemonicParsing="false" onAction="#accionBasica" prefHeight="50.0" prefWidth="70.0" style="-fx-background-color: #ef1cd7;" text="/" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+      <Button mnemonicParsing="false" onAction="#agregaDigito" prefHeight="50.0" prefWidth="70.0" style="-fx-background-color: #ccc5c5;" text="7" GridPane.rowIndex="2" />
+      <Button mnemonicParsing="false" onAction="#accionBasica" prefHeight="50.0" prefWidth="70.0" style="-fx-background-color: #ef1cd7;" text="*" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+      <Button mnemonicParsing="false" onAction="#agregaDigito" prefHeight="50.0" prefWidth="70.0" style="-fx-background-color: #ccc5c5;" text="9" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+      <Button mnemonicParsing="false" onAction="#agregaDigito" prefHeight="50.0" prefWidth="70.0" style="-fx-background-color: #ccc5c5;" text="8" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <Button mnemonicParsing="false" onAction="#accionBasica" prefHeight="50.0" prefWidth="70.0" style="-fx-background-color: #ef1cd7;" text="-" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+      <Button mnemonicParsing="false" onAction="#agregaDigito" prefHeight="50.0" prefWidth="70.0" style="-fx-background-color: #ccc5c5;" text="6" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+      <Button mnemonicParsing="false" onAction="#agregaDigito" prefHeight="50.0" prefWidth="70.0" style="-fx-background-color: #ccc5c5;" text="5" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+      <Button mnemonicParsing="false" onAction="#agregaDigito" prefHeight="50.0" prefWidth="70.0" style="-fx-background-color: #ccc5c5;" text="4" GridPane.rowIndex="3" />
+      <Button mnemonicParsing="false" onAction="#agregaDigito" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #ccc5c5;" text="0" GridPane.columnSpan="2" GridPane.rowIndex="5" />
+      <Button mnemonicParsing="false" onAction="#accionIgual" prefHeight="50.0" prefWidth="70.0" style="-fx-background-color: #8c2380;" text="=" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+      <Button mnemonicParsing="false" onAction="#agregaPunto" prefHeight="50.0" prefWidth="70.0" style="-fx-background-color: #ccc5c5;" text="." GridPane.columnIndex="2" GridPane.rowIndex="5" />
+      <Button mnemonicParsing="false" onAction="#agregaDigito" prefHeight="50.0" prefWidth="70.0" style="-fx-background-color: #ccc5c5;" text="1" GridPane.rowIndex="4" />
+      <Button mnemonicParsing="false" onAction="#agregaDigito" prefHeight="50.0" prefWidth="70.0" style="-fx-background-color: #ccc5c5;" text="2" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+      <Button mnemonicParsing="false" onAction="#accionBasica" prefHeight="50.0" prefWidth="70.0" style="-fx-background-color: #ef1cd7;" text="+" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+      <Button mnemonicParsing="false" onAction="#agregaDigito" prefHeight="50.0" prefWidth="70.0" style="-fx-background-color: #ccc5c5;" text="3" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+   </children>
+   <padding>
+      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+   </padding>
+</GridPane>
